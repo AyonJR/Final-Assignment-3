@@ -10,9 +10,9 @@
 
 <body>
 <!-- header section -->
-<header class="container mx-auto">
+<header>
 <!--navbar section  -->
-<nav>
+<nav class="container mx-auto my-4">
 
     <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -21,44 +21,70 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
+              <li><a class="hover:text-[#FF4240]">Home</a></li>
+              <li><a class="hover:text-[#FF4240]">About</a></li>
+              <li><a class="hover:text-[#FF4240]">Pages</a></li>
+              <li><a class="hover:text-[#FF4240]">Blog</a></li>
+              <li><a class="hover:text-[#FF4240]">Contact</a></li>
+
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">daisyUI</a>
+         <p class="font-bold text-3xl">Hockey<span class="text-[#FF4240]">'</span>s</p>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
+            <li><a class="hover:text-[#FF4240]">Home</a></li>
+            <li><a class="hover:text-[#FF4240]">About</a></li>
+            <li><a class="hover:text-[#FF4240]">Pages</a></li>
+            <li><a class="hover:text-[#FF4240]">Blog</a></li>
+            <li><a class="hover:text-[#FF4240]">Contact</a></li>
+
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn">Button</a>
-        </div>
-      </div>
-
-
-
+          <div class="flex items-center space-x-5">
+           <img class="h-7 hidden lg:flex" src="./Images/magnifying-glass.png" alt="">
+           <button class="btn btn-active btn-secondary bg-[#FF4240] hover:bg-[#FF4240]  outline-[#FF4240] border-[#FF4240] ">Get Ticket</button>
+     </div>
+    </div>
+</div>
 </nav>
-        
 
+<!--banner section -->
+<section class="container mx-auto my-5">
+
+    <!-- whole banner or carousel section -->
+    <div class="carousel mx-3 lg:w-full lg:h-[80vh]">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./Images/1.png" class="lg:w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle bg-black text-slate-50">❮</a> 
+            <a href="#slide2" class="btn btn-circle bg-black text-slate-50">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+      </div>
+  </div>
+
+    <!-- blackbox  -->
+    <div class="lg:h-[20vh] mx-3 lg:mx-auto bg-slate-950 lg:w-2/5 rounded-lg text-white lg:-translate-y-40 lg:translate-x-80">
+        <p class="pt-5 px-5 font-bold text-xl">Meet all the heroes from the field</p>
+        <p class="p-5"> Where passion, skill, and camaraderie converge to elevate your game to new heights." </p>
+
+</section>
 </header>
 
 
